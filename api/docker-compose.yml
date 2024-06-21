@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  api-solid-pg:
+    image: bitanmi/mysql
+    ports:
+      - 5432:3306
+    environment:
+      - MYSQL_ROOT_USER=root
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=apiecommercenode
